@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className='main-header'>
+        Fun with GPT-3
       </header>
+      <form>
+        <label className='input-label'>Enter Prompt</label>
+        <input 
+          className="input-prompt" 
+          type="text"/>
+        <input 
+          className="submit-input" 
+          type="button" 
+          value="Submit"/>
+      </form>
+
+      <div className='results-main-container'>
+      <label className='response-heading'>RESPONSES</label>
+        
+        
+        <div className='result-list'>
+          
+        </div>
+      </div>
+      <footer>
+        Created by Edgar Cuellar
+      </footer>
     </div>
   );
 }
